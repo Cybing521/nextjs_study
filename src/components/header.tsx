@@ -3,10 +3,10 @@ import React from 'react'
 import Link from "next/link"
 import { usePathname } from 'next/navigation'
 
-const linkData =[
-    {name:"Performance",href:"/performance"},
-    {name:"Reliability",href:"/reliability"},
-    {name:"Scale",href:"/scale"}
+const linkData = [
+    { name: "Performance", href: "/performance" },
+    { name: "Reliability", href: "/reliability" },
+    { name: "Scale", href: "/scale" }
 ]
 
 export default function Header() {
@@ -17,10 +17,10 @@ export default function Header() {
                 <Link href="/" className="text-3xl font-bold">Home</Link>
                 <div className="text-xl space-x-4">
                     {
-                        linkData.map((link)=>(
+                        linkData.map((link) => (
                             <Link
                                 key={link.name}
-                                className={pathName===link.href?'text-purple-500':''}
+                                className={pathName === link.href ? 'text-purple-500' : ''}
                                 href={link.href}
                             >
                                 {link.name}

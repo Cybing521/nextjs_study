@@ -1,5 +1,5 @@
 import React from "react"
-import catSrc from '../../public/cats.png'
+import catSrc from '../../../public/cats.png'
 import Hero from '@/components/hero'
 
 export default function Page() {
