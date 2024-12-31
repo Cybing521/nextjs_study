@@ -20,7 +20,7 @@ export default function Header() {
                         linkData.map((link) => (
                             <Link
                                 key={link.name}
-                                className={pathName === link.href ? 'text-purple-500' : ''}
+                                className={pathName === link.href ? 'text-purple-400' : ''}
                                 href={link.href}
                             >
                                 {link.name}
